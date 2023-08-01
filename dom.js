@@ -109,11 +109,6 @@ function showNode(el) {
   let nodeType = el.nodeType;
   let nodeName = el.nodeName;
   let nodeValue = el.nodeValue;
-  /*
-  alert(
-    `Node type: ${nodeType}\nNode name: ${nodeName}\nNode value: ${nodeValue}`
-  );
-*/
   let outputTextArea = document.getElementById("outputTextArea");
   outputTextArea.value += `Node type: ${nodeType}\nNode name: ${nodeName}\nNode value: ${nodeValue}\n\n`;
 }
@@ -140,7 +135,6 @@ function modify() {
   el.dataset.coolFactor = "9000"; //data-cool-factor="9000"
 }
 function advancedModify() {
-  //can I modify html page by adding ids
   document.getElementById("h1").innerHTML = "DOM Manipulation is Fun!";
   const colors = [
     "--darkcolor1",
@@ -208,8 +202,7 @@ function advancedAdd() {
   }
   output.appendChild(newElement);
 }
-//change variables here
-//submit tomorrow after confirming with TAs
+
 function safeDelete() {
   let controlPart = document.getElementById("controls");
   let deletePart = document.body.firstChild;
