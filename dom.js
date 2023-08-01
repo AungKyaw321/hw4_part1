@@ -204,7 +204,7 @@ function advancedAdd() {
   } else if (selectedOption == "Element") {
     const tagName = document.getElementById("elementTagName").value;
     newElement = document.createElement(tagName);
-    neFElement.textContent = "New Element: " + new Date().toLocaleString();
+    newElement.textContent = "New Element: " + new Date().toLocaleString();
   }
   output.appendChild(newElement);
 }
