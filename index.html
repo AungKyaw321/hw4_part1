@@ -45,6 +45,12 @@
         font-size: 3rem;
       }
 
+      .card {
+        /* Add shadows to create the "card" effect */
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+      }
+
       .fancy {
         animation-name: backgroundColorPalette;
         animation-duration: 10s;
@@ -199,10 +205,11 @@
         -->
           <template id="template1">
             <!--Add CSS to this-->
-            <title class="title1">Card Template</title>
-            <img class="img1" src="images/cat.jpg" />
-            <p class="p2">Short Paragraph</p>
-            <a href="https://www.mozilla.org/en-US/">Example Link</a>
+            <div class="card">
+              <img class="img1" src="images/cat.jpg" />
+              <p class="p2">Short Paragraph</p>
+              <a href="https://www.mozilla.org/en-US/">Example Link</a>
+            </div>
           </template>
           <input type="button" id="addTemplate" value="Add Template" />
           <div id="addTemplateHere"></div>
