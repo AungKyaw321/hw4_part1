@@ -179,7 +179,7 @@ function add() {
   // let oldP = document.getElementById('p1');
   // oldP.insertAdjacentHTML('afterend', '<p>This is a<em>test</em> of the DOM</p>');
   // clearly short hands are pretty easy!
-  /*
+  /* s
   let selected = getElementById("select");
   let selectedOption = selected.value;
   if(selectedOption == "TextNode"){
